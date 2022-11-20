@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd'
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails } from './components'
 import './App.css';
-import 'antd/dist/reset.css';
+// import 'antd/dist/reset.css';
 
 function App  ()  {
   return (
@@ -12,6 +12,7 @@ function App  ()  {
           <Navbar />
       </div>
       <div className='navbar'>
+        <div className='main'>
           <Layout> 
             <div className='routes'>
               <Routes>
@@ -32,10 +33,21 @@ function App  ()  {
               </Routes>
             </div>
           </Layout>
-      </div>
-      <div className='footer'>
+               <div className='footer' >
+            <Typography.Title level={5} style={{ color: 'white', textAlign: 'center'}}>
+                  Cryptoverse <br />
+                  All right reserverd
+            </Typography.Title>
+            <Space>
+              <Link to='/'>Home</Link>
+              <Link to='/exchances'>Exchances</Link>
+              <Link to='/news'>News</Link>
 
+            </Space>
+            </div>
       </div>
+      </div>
+ 
     </div>
     
   )
