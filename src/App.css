@@ -1,4 +1,84 @@
+.exchange-image {
+    margin: 0px 10px !important;
+}
+
+.search-crypto {
+    margin: 20px auto 30px auto;
+    width: 250px;
+}
+
+.crypto-card-container {
+    min-height: 65vh !important;
+}
+
+.crypto-card {
+    min-width: 250px;
+}
+
+.crypto-card .crypto-image {
+    width: 35px;
+}
+
 :root {
+    --text-primary: #000;
+    --bgPrimary: #fff;
+    --bgSecondary: #F9F9F9;
+    --pink: #0071bd;
+    --light-blue: #e6f7ff;
+    --border: #d9d9d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    color: var(--pink) !important;
+}
+
+.app {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #001529;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.navbar {
+    flex: 0.2;
+    background-color: rgb(0, 21, 41);
+}
+
+.routes {
+    padding: 20px;
+}
+
+.main {
+    flex: 0.8;
+    width: 100%;
+
+}
+
+.logo-container {
+    background-color: #001529;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* :root {
     --text-primary: #000;
     --bgPrimary: #fff;
     --bgSecondary: #F9F9F9;
@@ -405,4 +485,4 @@ a:hover {
     flex-direction: column;
     padding: 20px;
     align-items: center;
-}
+} */

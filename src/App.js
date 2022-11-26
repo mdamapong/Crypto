@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd'
 import { Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails } from './components'
 import './App.css';
-// import 'antd/dist/reset.css';
+import 'antd/dist/reset.css';
 
 function App  ()  {
   return (
@@ -40,7 +40,7 @@ function App  ()  {
             </Typography.Title>
             <Space>
               <Link to='/'>Home</Link>
-              <Link to='/exchances'>Exchances</Link>
+              <Link to='/exchanges'>Exchanges</Link>
               <Link to='/news'>News</Link>
 
             </Space>
